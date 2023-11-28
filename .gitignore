@@ -1,0 +1,14 @@
+.idea/
+build/
+tmp/
+temp/
+
+# SQLite
+*.sqlite
+
+# Deno
+deno.lock
+
+# Node
+node_modules/
+package-lock.json

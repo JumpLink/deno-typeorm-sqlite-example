@@ -1,0 +1,23 @@
+{
+  "name": "node-typeorm-sqlite-example",
+  "version": "0.0.1",
+  "description": "Steps to run this project:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node node/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^8.7.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^16.11.10",
+    "ts-node": "10.7.0",
+    "typescript": "4.5.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "deno-typeorm-sqlite-example",
+    "version": "0.0.1",
+    "compilerOptions": {
+        "emitDecoratorMetadata": true
+    },
+    "tasks": {
+        "dev": "deno run --allow-net --allow-read --allow-write --allow-env --allow-ffi --unstable --watch ./deno/index.ts"
+    }
+}
