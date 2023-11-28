@@ -1,6 +1,6 @@
 # Deno TypeORM SQLite Example
 
-This example is used to get TypeORM running with SQLite.
+This example is used to get TypeORM running with SQLite [to fix this issue](https://github.com/denodrivers/sqlite3/issues/113).
 
 ## Deno
 
