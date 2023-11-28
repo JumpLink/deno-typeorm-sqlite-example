@@ -18,6 +18,15 @@
                 "--unstable"
             ],
             "attachSimplePort": 9229
+        },
+        {
+            "request": "launch",
+            "name": "Debug Node.js",
+            "type": "node",
+            "program": "${workspaceFolder}/node/out/index.js",
+            "preLaunchTask": "tsc: build - tsconfig.json", // runs the tsc build task before launching the debug session
+            "outFiles": ["${workspaceFolder}/node/out/**/*.js"], // location of compiled JavaScript files
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

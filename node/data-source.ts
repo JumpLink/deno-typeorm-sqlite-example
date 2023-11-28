@@ -9,7 +9,7 @@ export const AppDataSource = new DataSource({
     type: "better-sqlite3", // The Node.js better-sqlite3` package is similar to the Deno `sqlite3` package.
     database: "node/database.sqlite",
     synchronize: true,
-    logging: false,
+    logging: true,
     entities: [User],
     migrations: [],
     subscribers: [],

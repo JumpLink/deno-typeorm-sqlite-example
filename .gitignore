@@ -12,3 +12,4 @@ deno.lock
 # Node
 node_modules/
 package-lock.json
+node/out/

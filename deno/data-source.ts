@@ -1,9 +1,9 @@
 import "npm:reflect-metadata"
-import { DataSource } from "npm:typeorm"
+import { DataSource } from "npm:typeorm@latest"
 import { User } from "./entity/User.ts"
 import { Database } from "https://deno.land/x/sqlite3/mod.ts"
 
-import type { BetterSqlite3ConnectionOptions } from "npm:typeorm/driver/better-sqlite3/BetterSqlite3ConnectionOptions.d.ts"
+import type { BetterSqlite3ConnectionOptions } from "npm:typeorm@latest/driver/better-sqlite3/BetterSqlite3ConnectionOptions.d.ts"
 import type { DatabaseOpenOptions, RestBindParameters } from "https://deno.land/x/sqlite3/mod.ts"
 
 
@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
     type: "better-sqlite3", // The Node.js better-sqlite3` package is similar to the Deno `sqlite3` package.
     database: "deno/database.sqlite",
     synchronize: true,
-    logging: false,
+    logging: true,
     entities: [User],
     migrations: [],
     subscribers: [],
